@@ -3,7 +3,10 @@
   <head>
     <title>Houston Steak House | Contact Less Order</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>  
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="./js/gallery.js"></script>  
+
 </head>
   <body>
     <nav>
@@ -18,10 +21,55 @@
           <li><a href="order.html">Order</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="review.html">Review</a></li>
+          <li><a href="foodbook.html">Food Book</a></li>
         </ul>
       </nav>
 
+<!--    Gallery Slider       -->
+
+
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img class="slider" src="images/img1.jpg">
+      <div class="text">Houston Steak House now offers Contact less Order.</div>
+      <div class="overlay"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img class="slider" src="images/img2.jpg">
+      <div class="text">We Provide the best steak in the City Located in the heart of Islamabad.</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img class="slider" src="images/img3.jpg">
+      <div class="text">Now Offering buy one get one free.</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    <div class="container">
+        <div class="vertical-center">
+            <div style=" margin-top: 100px; margin-left: 40px;">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
+        </div>
+    <div class="vertical-center">
+        <button class="ordernowbtn" onclick="location.href='order.html'";>Order Now</button>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+  </script>
 
 <div class="footer">
   <p>All rights reserved by <a href="HoustonSteakHouse.com">Houston Steak House</p>
