@@ -1,5 +1,5 @@
 <?php
-if (isset( $_POST['id']) === true){
+if (isset( $_POST['table_no']) === true){
 $servername = "localhost";
 $username = "test";
 $password = "test";
@@ -10,12 +10,12 @@ $conn = mysqli_connect($servername, $username, $password);
       }
 $retval = mysqli_select_db( $conn, 'restaurant' );
 $query = "
-INSERT INTO `orders` (`id`, `table_no`, `status`)
- VALUES ('". $_POST['id'] ."', '". $_POST['table_no'] ."', '". $_POST['description'] ."');
+UPDATE `orders`
+SET `status` = 'delivered'
+WHERE `table_no` = '". $_POST['table_no']. "' ;
 ";
-
 if ($conn->query($query) === TRUE) {
-    echo "Order Added";
+    echo "Order Completed";
   } else {
     echo "Error: " . $query . "<br>" . $conn->error;
   }

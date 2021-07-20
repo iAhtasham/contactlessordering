@@ -34,6 +34,15 @@
   <label for="checkbox1"></label>
   <div class="float-container">
     <div class="float-inventory">
+    <div class="table_div">
+        <label for="table_no">Table no:</label>
+        <select name="table_no" id="table_no">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+    </div>
 <!-- ITEMS -->
 
 
@@ -231,32 +240,14 @@
     <button class="item-order" id="chedder_cheese_fries">Add to Cart</button>
     </div>
     
-  
-
-
-  
-
-
-
-    
-      
-    
-
-          
-        
-      
-
 
 <!-- ITEMS END -->
     </div>
     <div class="float-cart">
       <p style="text-align: center;"><b>YOUR ORDER</b></p>
-      <div class="order">
-      Steak With chesse 1x  Rs. 999
-      <br/>
-      Pizza Garlic 2X Rs. 1898
+      <div class="order" id = "order_box">
       </div>
-      <button class="confirmbtn">Confirm Order</button>   
+      <button class="confirmbtn" id="confirm_btn">Confirm Order</button>   
     </div>
   </div>
 </div>

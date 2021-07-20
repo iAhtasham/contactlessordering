@@ -1,3 +1,7 @@
+*{
+list-style: square;
+}
+
 .float-container {
   width: 100%;
   padding: 0;
@@ -5,7 +9,7 @@
   height: 100%;
 }
 
-.float-inventory {
+.float-orders {
   background-color: rgb(255, 255, 255);
   width: 80%;
   padding: 2%;
@@ -19,11 +23,11 @@
   -ms-overflow-style: none; /* hiding scroollbar */
   scrollbar-width: none;
 }
-.float-inventory::-webkit-scrollbar { 
+.float-orders::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }
 
-.float-cart {
+.float-messages {
   width: 20%;
   height: 100%;
   float: right;
@@ -56,7 +60,7 @@ font-size: 20px;
 }
 
 .check_box + label {
-  background: url("../images/cart.png");
+  background: url("../images/messages.png");
   background-repeat: no-repeat;
   background-size: 40px 40px;
   margin-top: 10px;
@@ -84,25 +88,25 @@ font-size: 20px;
 
 
 @media (max-width: 658px) {
-  .float-inventory {
+  .float-orders {
     padding-top: 50px;
     width: 100%;
   }
-  .float-cart {
+  .float-messages {
     display: none;
   }
   .check_box + label {
     display: flex;
   }
 
-  .check_box:checked ~ .float-container .float-inventory {
+  .check_box:checked ~ .float-container .float-orders {
     display: none;
     transition: opacity 1s ease-out;
     opacity: 0;
     opacity: 0;
   }
   
-  .check_box:checked ~ .float-container .float-cart {
+  .check_box:checked ~ .float-container .float-messages {
     display: block;
     width: 100%;
   }
@@ -173,6 +177,7 @@ font-size: 20px;
     margin-top: 20px;
     font-size: 16px;
     font-family: serif;
+    
 }
 .confirmbtn{
     background-color: coral;
@@ -192,11 +197,11 @@ font-size: 20px;
 }
 
 @media (max-width: 658px) {
-    .float-inventory {
+    .float-orders {
       padding-top: 50px;
       width: 100%;
     }
-    .float-cart {
+    .float-messages {
       display: none;
     }
     .check_box + label {
