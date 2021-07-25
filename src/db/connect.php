@@ -12,4 +12,3 @@ $conn = mysqli_connect($servername, $username, $password);
       if(! $retval ) {
          die('Could not select database: ' . mysqli_error($conn));
       }
-    echo $retval
